@@ -8,7 +8,7 @@ function ctrlIndex($request, $response, $container) {
     $user = $request->get("SESSION", "user");
 
     
-    //$tasks = $taskModel->getAll($user["id"]); 
+    $tasks = $taskModel->getAll($user["id"]); 
     $response->setTemplate("index.php");
     
 
