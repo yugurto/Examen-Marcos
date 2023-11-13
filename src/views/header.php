@@ -19,4 +19,3 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?r=llistat">llistat</a>
                 </li>
-                

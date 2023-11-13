@@ -14,19 +14,19 @@
     <input type="hidden" name="r" value="do_register">
 <div class="mb-3">
     <label for="exampleInputText1" class="form-label">Nom</label>
-    <input name="nom" type="text" class="form-control" id="input" aria-describedby="emailHelp">
+    <input name="nom" type="text" class="form-control" id="nom" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
-    <label for="exampleInputText1" class="form-label">Cognoms</label>
-    <input name="cognoms" type="text" class="form-control" id="input" aria-describedby="emailHelp">
+    <label for="exampleInputText2" class="form-label">Cognoms</label>
+    <input name="cognoms" type="text" class="form-control" id="cognoms" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
     <label for="exampleInputDate1" class="form-label">Data de naixament</label>
-    <input name="data_naix" type="date" class="form-control" id="input" aria-describedby="emailHelp">
+    <input name="data_naix" type="date" class="form-control" id="data" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">adreca</label>
-    <input name="adreca" type="text" class="form-control" id="input" aria-describedby="emailHelp">
+    <input name="adreca" type="text" class="form-control" id="adreca" aria-describedby="emailHelp">
   </div>
   <input type="file" name="foto" id="foto" accept="image/jpg" class="form-control container-m10">
   <button type="submit" class="btn btn-primary">Enviar</button>
