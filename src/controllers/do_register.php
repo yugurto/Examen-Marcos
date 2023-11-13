@@ -14,7 +14,18 @@ function ctrlDoRegister($request, $response, $container){
 
     $taskModel->addUser($nom,$cognoms,$data_naix,$adreca);
 
-
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $nom = $_POST["nom"];
+        $cognoms = $_POST["cognoms"];
+    
+        if ($_FILES["foto"]["error"] === UPLOAD_ERR_OK) {
+            $nomFoto = $nom . $cognoms . ".jpg";
+            $rutaDesti = "images/" . $nombFoto;
+    
+            move_uploaded_file($_FILES["foto"]["tmp_name"], $rutaDesti);
+                
+        } 
+        } 
     $response->redirect("location: index.php?r=index");
     return $response;
 }

@@ -16,3 +16,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?r=register">Inscripcio</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php?r=llistat">llistat</a>
+                </li>
+                

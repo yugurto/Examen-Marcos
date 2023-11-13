@@ -11,6 +11,10 @@ include "../src/middleware/example.php";
 include "../src/middleware/isLogged.php";
 include "../src/controllers/register.php";
 include "../src/controllers/do_register.php";
+include "../src/controllers/llistat.php";
+include "../src/controllers/mostrarLlistat.php";
+include "../src/controllers/login.php";
+include "../src/controllers/do_login.php";
 
  $request = new \Emeset\Request();
  $response = new \Emeset\Response();
@@ -36,7 +40,23 @@ $response->response();
 elseif($r == "do_register") {
 $response = ctrlDoRegister($request, $response, $container);
 $response->response();
-            }
+}
+elseif($r == "llistat") {
+$response = ctrlLlistat($request, $response, $container);
+$response->response();
+}
+elseif($r == "mostrarLlistat") {
+  $response = ctrlMostrarLlistat($request, $response, $container);
+  $response->response();
+  }
+  elseif($r == "login") {
+    $response = ctrlLogin($request, $response, $container);
+    $response->response();
+    }
+    elseif($r == "do_login") {
+      $response = ctrlDoLogin($request, $response, $container);
+      $response->response();
+      }
  else {
      $response = ctrlIndex($request, $response, $container);
        $response->response();
